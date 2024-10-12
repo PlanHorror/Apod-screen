@@ -7,6 +7,6 @@
 - At this time my script only support Window operating system, another OS will be support soon just waitting :>
 # Usage
 - Create a account in [NASA API Portal](https://apod.nasa.gov/apod/) then a API key will sent to you in email
-- Paste your API key to API_KEY variable in .env
+- Create an .env file that assigns your API to the API_KEY variable just like the .env_example file
 - Import every librarys from **requirements.txt**
 - After that just run **main.py** and you will have a image of Astronomy in your background :>
