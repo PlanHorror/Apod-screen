@@ -1,2 +1,3 @@
 .env
 commit.py
+/__pycache__
