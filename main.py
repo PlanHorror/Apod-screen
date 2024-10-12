@@ -26,6 +26,9 @@ def main():
         #     os.remove(os.path.join("\screen", file))
         # Download the image to the screen folder
         image_path = os.path.join(path, f"{date} {title}.jpg")
+        # Check if the image is already downloaded
+        if os.path.exists(image_path):
+            return None    
         response = requests.get(image_url)
         with open(image_path, "wb") as file:
             file.write(response.content)
