@@ -3,6 +3,7 @@ import ctypes
 import os
 import dotenv
 
+
 # Check if the request was successful
 def main():
     # NASA API endpoint and your API key
@@ -27,7 +28,6 @@ def main():
             with open(image_path, "wb") as file:
                 file.write(response.content)
             # Set the image as wallpaper
-            print(image_path)
             ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
         elif check_url_youtube(image_url):
             print("Youtube video")
@@ -39,10 +39,12 @@ def main():
             # Get the video thumbnail
             image_url = f"https://img.youtube.com/vi/{video_id}/maxresdefault.jpg"
             response = requests.get(image_url)
-            with open(image_path, "wb") as file:
-                file.write(response.content)
+            if response.status_code != 200:
+                return None
+            else:
+                with open(image_path, "wb") as file:
+                    file.write(response.content)
             # Set the image as wallpaper
-            print(image_path)
             ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
         # Delete every image in screen folder
         # for file in os.listdir("\screen"):
