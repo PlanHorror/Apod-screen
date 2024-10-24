@@ -2,7 +2,7 @@ import requests
 import ctypes
 import os
 import dotenv
-
+import re
 
 # Check if the request was successful
 def main():
@@ -21,14 +21,20 @@ def main():
         image_url = data.get("url")
         title = data.get("title")
         date = data.get("date")
+        title = re.sub(r"[^a-zA-Z0-9]", " ", title) # Remove special characters from the title
         if check_url_image(image_url):
             image_path = os.path.join(path, f"{date} {title}.jpg")
             # Check if the image is already downloaded 
             response = requests.get(image_url)
-            with open(image_path, "wb") as file:
-                file.write(response.content)
-            # Set the image as wallpaper
-            ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
+            if response.status_code != 200:
+                print("Failed to fetch image.")
+                return None
+            else:
+                print(response)
+                with open(image_path, "wb") as file:
+                    file.write(response.content)
+                # Set the image as wallpaper
+                ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
         elif check_url_youtube(image_url):
             print("Youtube video")
             image_path = os.path.join(path, f"{date} {title}.jpg")
