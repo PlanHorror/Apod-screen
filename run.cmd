@@ -1,0 +1,1 @@
+C:/Python312/python.exe f:/Repository/Apod-screen/commit.py
