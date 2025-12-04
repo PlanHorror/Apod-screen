@@ -34,7 +34,10 @@ def main():
                 with open(image_path, "wb") as file:
                     file.write(response.content)
                 # Set the image as wallpaper
-                ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
+                try: 
+                    ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
+                except:
+                    print("Cannot set image to wallpaper")
         elif check_url_youtube(image_url):
             print("Youtube video")
             image_path = os.path.join(path, f"{date} {title}.jpg")
@@ -51,7 +54,10 @@ def main():
                 with open(image_path, "wb") as file:
                     file.write(response.content)
             # Set the image as wallpaper
-            ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
+                try: 
+                    ctypes.windll.user32.SystemParametersInfoW(20, 0, image_path, 0)
+                except:
+                    print("Cannot set image to wallpaper")
         # Delete every image in screen folder
         # for file in os.listdir("\screen"):
         #     os.remove(os.path.join("\screen", file))
