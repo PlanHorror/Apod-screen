@@ -1,0 +1,21 @@
+{
+  "name": "apod-screen-nodejs",
+  "version": "1.0.0",
+  "description": "APOD Screen - TypeScript version",
+  "main": "src/commit.ts",
+  "scripts": {
+    "start": "bun run src/commit.ts",
+    "main": "bun run src/main.ts",
+    "build": "bun build src/commit.ts --outdir dist"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "simple-git": "^3.21.0",
+    "wallpaper": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2"
+  }
+}
