@@ -1,0 +1,371 @@
+{
+  "version": "1.0",
+  "resources": {
+    "Listener": {
+      "operation": "DescribeListeners",
+      "resourceIdentifier": {
+        "ListenerArn": "Listeners[].ListenerArn",
+        "SslPolicy": "Listeners[].SslPolicy"
+      }
+    },
+    "LoadBalancer": {
+      "operation": "DescribeLoadBalancers",
+      "resourceIdentifier": {
+        "LoadBalancerArn": "LoadBalancers[].LoadBalancerArn",
+        "IpAddressType": "LoadBalancers[].IpAddressType"
+      }
+    },
+    "Rule": {
+      "operation": "DescribeRules",
+      "resourceIdentifier": {
+        "RuleArn": "Rules[].RuleArn"
+      }
+    },
+    "TargetGroup": {
+      "operation": "DescribeTargetGroups",
+      "resourceIdentifier": {
+        "TargetGroupArn": "TargetGroups[].TargetGroupArn",
+        "Protocol": "TargetGroups[].Protocol",
+        "HealthCheckProtocol": "TargetGroups[].HealthCheckProtocol",
+        "HealthCheckPort": "TargetGroups[].HealthCheckPort",
+        "HealthCheckPath": "TargetGroups[].HealthCheckPath"
+      }
+    }
+  },
+  "operations": {
+    "AddListenerCertificates": {
+      "ListenerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "ListenerArn"
+          }
+        ]
+      }
+    },
+    "DeleteListener": {
+      "ListenerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "ListenerArn"
+          }
+        ]
+      }
+    },
+    "DeleteLoadBalancer": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      }
+    },
+    "DeleteRule": {
+      "RuleArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Rule",
+            "resourceIdentifier": "RuleArn"
+          }
+        ]
+      }
+    },
+    "DeleteTargetGroup": {
+      "TargetGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      }
+    },
+    "DeregisterTargets": {
+      "TargetGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      }
+    },
+    "DescribeListenerCertificates": {
+      "ListenerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "ListenerArn"
+          }
+        ]
+      }
+    },
+    "DescribeListeners": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      },
+      "ListenerArns": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "ListenerArn"
+          }
+        ]
+      }
+    },
+    "DescribeLoadBalancerAttributes": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      }
+    },
+    "DescribeRules": {
+      "ListenerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "ListenerArn"
+          }
+        ]
+      },
+      "RuleArns": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Rule",
+            "resourceIdentifier": "RuleArn"
+          }
+        ]
+      }
+    },
+    "DescribeTargetGroupAttributes": {
+      "TargetGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      }
+    },
+    "DescribeTargetGroups": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      },
+      "TargetGroupArns": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      }
+    },
+    "DescribeTargetHealth": {
+      "TargetGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      }
+    },
+    "ModifyListener": {
+      "ListenerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "ListenerArn"
+          }
+        ]
+      },
+      "Protocol": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "Protocol"
+          }
+        ]
+      },
+      "SslPolicy": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "SslPolicy"
+          }
+        ]
+      }
+    },
+    "ModifyLoadBalancerAttributes": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      }
+    },
+    "ModifyRule": {
+      "RuleArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Rule",
+            "resourceIdentifier": "RuleArn"
+          }
+        ]
+      }
+    },
+    "ModifyTargetGroup": {
+      "TargetGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      },
+      "HealthCheckProtocol": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "HealthCheckProtocol"
+          }
+        ]
+      },
+      "HealthCheckPort": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "HealthCheckPort"
+          }
+        ]
+      },
+      "HealthCheckPath": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "HealthCheckPath"
+          }
+        ]
+      }
+    },
+    "ModifyTargetGroupAttributes": {
+      "TargetGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      }
+    },
+    "RegisterTargets": {
+      "TargetGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TargetGroup",
+            "resourceIdentifier": "TargetGroupArn"
+          }
+        ]
+      }
+    },
+    "RemoveListenerCertificates": {
+      "ListenerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Listener",
+            "resourceIdentifier": "ListenerArn"
+          }
+        ]
+      }
+    },
+    "SetIpAddressType": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      },
+      "IpAddressType": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "IpAddressType"
+          }
+        ]
+      }
+    },
+    "SetSecurityGroups": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      }
+    },
+    "SetSubnets": {
+      "LoadBalancerArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "LoadBalancer",
+            "resourceIdentifier": "LoadBalancerArn"
+          }
+        ]
+      }
+    }
+  }
+}

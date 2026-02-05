@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "resources": {
+    "Trail": {
+      "operation": "DescribeTrails",
+      "resourceIdentifier": {
+        "Name": "trailList[].Name",
+        "S3BucketName": "trailList[].S3BucketName",
+        "S3KeyPrefix": "trailList[].S3KeyPrefix",
+        "SnsTopicName": "trailList[].SnsTopicName",
+        "CloudWatchLogsLogGroupArn": "trailList[].CloudWatchLogsLogGroupArn",
+        "CloudWatchLogsRoleArn": "trailList[].CloudWatchLogsRoleArn",
+        "KmsKeyId": "trailList[].KmsKeyId"
+      }
+    }
+  },
+  "operations": {
+    "DeleteTrail": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "GetTrailStatus": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "StartLogging": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "StopLogging": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "UpdateTrail": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      },
+      "S3BucketName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "S3BucketName"
+          }
+        ]
+      },
+      "S3KeyPrefix": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "S3KeyPrefix"
+          }
+        ]
+      },
+      "SnsTopicName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "SnsTopicName"
+          }
+        ]
+      },
+      "CloudWatchLogsLogGroupArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "CloudWatchLogsLogGroupArn"
+          }
+        ]
+      },
+      "CloudWatchLogsRoleArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "CloudWatchLogsRoleArn"
+          }
+        ]
+      },
+      "KmsKeyId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Trail",
+            "resourceIdentifier": "KmsKeyId"
+          }
+        ]
+      }
+    }
+  }
+}

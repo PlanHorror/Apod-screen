@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "resources": {
+    "Pipeline": {
+      "operation": "ListPipelines",
+      "resourceIdentifier": {
+        "name": "pipelines[].name"
+      }
+    }
+  },
+  "operations": {
+    "DeletePipeline": {
+      "name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Pipeline",
+            "resourceIdentifier": "name"
+          }
+        ]
+      }
+    },
+    "DeleteWebhook": {
+      "name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Pipeline",
+            "resourceIdentifier": "name"
+          }
+        ]
+      }
+    },
+    "GetPipeline": {
+      "name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Pipeline",
+            "resourceIdentifier": "name"
+          }
+        ]
+      }
+    },
+    "GetPipelineState": {
+      "name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Pipeline",
+            "resourceIdentifier": "name"
+          }
+        ]
+      }
+    },
+    "StartPipelineExecution": {
+      "name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Pipeline",
+            "resourceIdentifier": "name"
+          }
+        ]
+      }
+    }
+  }
+}

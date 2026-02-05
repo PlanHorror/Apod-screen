@@ -1,0 +1,308 @@
+{
+  "version": "1.0",
+  "resources": {
+    "DirectoryConfig": {
+      "operation": "DescribeDirectoryConfigs",
+      "resourceIdentifier": {
+        "DirectoryName": "DirectoryConfigs[].DirectoryName"
+      }
+    },
+    "Fleet": {
+      "operation": "DescribeFleets",
+      "resourceIdentifier": {
+        "ImageName": "Fleets[].ImageName"
+      }
+    },
+    "ImageBuilder": {
+      "operation": "DescribeImageBuilders",
+      "resourceIdentifier": {
+        "ImageArn": "ImageBuilders[].ImageArn",
+        "InstanceType": "ImageBuilders[].InstanceType"
+      }
+    },
+    "Image": {
+      "operation": "DescribeImages",
+      "resourceIdentifier": {
+        "AppstreamAgentVersion": "Images[].AppstreamAgentVersion"
+      }
+    },
+    "Stack": {
+      "operation": "DescribeStacks",
+      "resourceIdentifier": {
+        "Name": "Stacks[].Name",
+        "Description": "Stacks[].Description",
+        "DisplayName": "Stacks[].DisplayName",
+        "RedirectURL": "Stacks[].RedirectURL",
+        "FeedbackURL": "Stacks[].FeedbackURL"
+      }
+    }
+  },
+  "operations": {
+    "DeleteDirectoryConfig": {
+      "DirectoryName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "DirectoryConfig",
+            "resourceIdentifier": "DirectoryName"
+          }
+        ]
+      }
+    },
+    "DeleteFleet": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "DeleteImage": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "DeleteImageBuilder": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "DeleteImagePermissions": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "DeleteStack": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "DescribeDirectoryConfigs": {
+      "DirectoryNames": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "DirectoryConfig",
+            "resourceIdentifier": "DirectoryName"
+          }
+        ]
+      }
+    },
+    "DescribeImagePermissions": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "StartFleet": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "StartImageBuilder": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      },
+      "AppstreamAgentVersion": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Image",
+            "resourceIdentifier": "AppstreamAgentVersion"
+          }
+        ]
+      }
+    },
+    "StopFleet": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "StopImageBuilder": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "UpdateDirectoryConfig": {
+      "DirectoryName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "DirectoryConfig",
+            "resourceIdentifier": "DirectoryName"
+          }
+        ]
+      }
+    },
+    "UpdateFleet": {
+      "ImageName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Fleet",
+            "resourceIdentifier": "ImageName"
+          }
+        ]
+      },
+      "ImageArn": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "ImageBuilder",
+            "resourceIdentifier": "ImageArn"
+          }
+        ]
+      },
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      },
+      "InstanceType": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "ImageBuilder",
+            "resourceIdentifier": "InstanceType"
+          }
+        ]
+      },
+      "Description": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Description"
+          }
+        ]
+      },
+      "DisplayName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "DisplayName"
+          }
+        ]
+      }
+    },
+    "UpdateImagePermissions": {
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      }
+    },
+    "UpdateStack": {
+      "DisplayName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "DisplayName"
+          }
+        ]
+      },
+      "Description": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Description"
+          }
+        ]
+      },
+      "Name": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "Name"
+          }
+        ]
+      },
+      "RedirectURL": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "RedirectURL"
+          }
+        ]
+      },
+      "FeedbackURL": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "Stack",
+            "resourceIdentifier": "FeedbackURL"
+          }
+        ]
+      }
+    }
+  }
+}

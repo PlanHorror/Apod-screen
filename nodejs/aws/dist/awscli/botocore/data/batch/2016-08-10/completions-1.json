@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "resources": {
+    "ComputeEnvironment": {
+      "operation": "DescribeComputeEnvironments",
+      "resourceIdentifier": {
+        "computeEnvironmentArn": "computeEnvironments[].computeEnvironmentArn",
+        "serviceRole": "computeEnvironments[].serviceRole"
+      }
+    },
+    "JobDefinition": {
+      "operation": "DescribeJobDefinitions",
+      "resourceIdentifier": {
+        "jobDefinitionName": "jobDefinitions[].jobDefinitionName",
+        "type": "jobDefinitions[].type"
+      }
+    },
+    "JobQueue": {
+      "operation": "DescribeJobQueues",
+      "resourceIdentifier": {
+        "state": "jobQueues[].state",
+        "status": "jobQueues[].status"
+      }
+    }
+  },
+  "operations": {
+    "DeleteComputeEnvironment": {
+      "computeEnvironment": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "ComputeEnvironment",
+            "resourceIdentifier": "computeEnvironmentArn"
+          }
+        ]
+      }
+    },
+    "DescribeJobDefinitions": {
+      "jobDefinitionName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "JobDefinition",
+            "resourceIdentifier": "jobDefinitionName"
+          }
+        ]
+      },
+      "status": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "JobQueue",
+            "resourceIdentifier": "status"
+          }
+        ]
+      }
+    },
+    "RegisterJobDefinition": {
+      "jobDefinitionName": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "JobDefinition",
+            "resourceIdentifier": "jobDefinitionName"
+          }
+        ]
+      },
+      "type": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "JobDefinition",
+            "resourceIdentifier": "type"
+          }
+        ]
+      }
+    },
+    "UpdateComputeEnvironment": {
+      "computeEnvironment": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "ComputeEnvironment",
+            "resourceIdentifier": "computeEnvironmentArn"
+          }
+        ]
+      },
+      "state": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "JobQueue",
+            "resourceIdentifier": "state"
+          }
+        ]
+      },
+      "serviceRole": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "ComputeEnvironment",
+            "resourceIdentifier": "serviceRole"
+          }
+        ]
+      }
+    },
+    "UpdateJobQueue": {
+      "state": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "JobQueue",
+            "resourceIdentifier": "state"
+          }
+        ]
+      }
+    }
+  }
+}

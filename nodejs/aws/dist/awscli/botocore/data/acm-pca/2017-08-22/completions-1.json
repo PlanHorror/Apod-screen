@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "resources": {
+    "CertificateAuthority": {
+      "operation": "ListCertificateAuthorities",
+      "resourceIdentifier": {
+        "Status": "CertificateAuthorities[].Status"
+      }
+    }
+  },
+  "operations": {
+    "UpdateCertificateAuthority": {
+      "Status": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "CertificateAuthority",
+            "resourceIdentifier": "Status"
+          }
+        ]
+      }
+    }
+  }
+}

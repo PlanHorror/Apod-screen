@@ -1,0 +1,395 @@
+{
+  "version": "1.0",
+  "resources": {
+    "GeoLocation": {
+      "operation": "ListGeoLocations",
+      "resourceIdentifier": {
+        "ContinentCode": "GeoLocationDetailsList[].ContinentCode",
+        "CountryCode": "GeoLocationDetailsList[].CountryCode",
+        "SubdivisionCode": "GeoLocationDetailsList[].SubdivisionCode"
+      }
+    },
+    "TrafficPolicy": {
+      "operation": "ListTrafficPolicies",
+      "resourceIdentifier": {
+        "Type": "TrafficPolicySummaries[].Type"
+      }
+    },
+    "TrafficPolicyInstance": {
+      "operation": "ListTrafficPolicyInstances",
+      "resourceIdentifier": {
+        "Id": "TrafficPolicyInstances[].Id",
+        "HostedZoneId": "TrafficPolicyInstances[].HostedZoneId",
+        "TrafficPolicyId": "TrafficPolicyInstances[].TrafficPolicyId"
+      }
+    }
+  },
+  "operations": {
+    "AssociateVPCWithHostedZone": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "ChangeResourceRecordSets": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "DeleteHostedZone": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "DeleteQueryLoggingConfig": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "DeleteReusableDelegationSet": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "DeleteTrafficPolicy": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "DeleteTrafficPolicyInstance": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "DeleteVPCAssociationAuthorization": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "DisassociateVPCFromHostedZone": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "GetAccountLimit": {
+      "Type": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicy",
+            "resourceIdentifier": "Type"
+          }
+        ]
+      }
+    },
+    "GetChange": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "GetGeoLocation": {
+      "ContinentCode": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "GeoLocation",
+            "resourceIdentifier": "ContinentCode"
+          }
+        ]
+      },
+      "CountryCode": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "GeoLocation",
+            "resourceIdentifier": "CountryCode"
+          }
+        ]
+      },
+      "SubdivisionCode": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "GeoLocation",
+            "resourceIdentifier": "SubdivisionCode"
+          }
+        ]
+      }
+    },
+    "GetHostedZone": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "GetHostedZoneLimit": {
+      "Type": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicy",
+            "resourceIdentifier": "Type"
+          }
+        ]
+      },
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "GetQueryLoggingConfig": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "GetReusableDelegationSet": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "GetReusableDelegationSetLimit": {
+      "Type": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicy",
+            "resourceIdentifier": "Type"
+          }
+        ]
+      }
+    },
+    "GetTrafficPolicy": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "GetTrafficPolicyInstance": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "ListHostedZonesByName": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "ListQueryLoggingConfigs": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "ListResourceRecordSets": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "ListTrafficPolicyInstancesByHostedZone": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "ListTrafficPolicyInstancesByPolicy": {
+      "TrafficPolicyId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "TrafficPolicyId"
+          }
+        ]
+      }
+    },
+    "ListTrafficPolicyVersions": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "ListVPCAssociationAuthorizations": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "TestDNSAnswer": {
+      "HostedZoneId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "HostedZoneId"
+          }
+        ]
+      }
+    },
+    "UpdateHostedZoneComment": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "UpdateTrafficPolicyComment": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      }
+    },
+    "UpdateTrafficPolicyInstance": {
+      "Id": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "Id"
+          }
+        ]
+      },
+      "TrafficPolicyId": {
+        "completions": [
+          {
+            "parameters": {},
+            "resourceName": "TrafficPolicyInstance",
+            "resourceIdentifier": "TrafficPolicyId"
+          }
+        ]
+      }
+    }
+  }
+}
